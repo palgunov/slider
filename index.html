@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="slider.js"></script>
+    <script>
+        $(function () {
+            $(".slider").mySlider();
+        });
+
+    </script>
+    <style>
+        .slider{
+            width: 960px;
+            overflow: hidden;
+
+        }
+        .slider_list{
+            width: 60000rem;
+            display: flex;
+            padding: 0;
+            flex-flow: row;
+            transition: 2s;
+        }
+        .slider_list>li{
+            list-style: none;
+            width: 960px;
+        }
+    </style>
+</head>
+<body>
+<div class="slider">
+    <ul class="slider_list">
+        <li><img src="dog.jpg" alt="1"></li>
+        <li><img src="lizard.jpg" alt="2"></li>
+        <li><img src="map.jpg" alt="3"></li>
+        <li><img src="road.jpg" alt="4"></li>
+    </ul>
+    <button class="prev">prev</button>
+    <button class="next">next</button>
+</div>
+<div class="slider">
+    <ul class="slider_list">
+        <li><img src="dog.jpg" alt="1"></li>
+        <li><img src="lizard.jpg" alt="2"></li>
+        <li><img src="map.jpg" alt="3"></li>
+        <li><img src="road.jpg" alt="4"></li>
+    </ul>
+    <button class="prev">prev</button>
+    <button class="next">next</button>
+</div>
+
+</body>
+</html>
